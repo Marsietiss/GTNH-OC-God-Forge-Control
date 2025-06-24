@@ -511,7 +511,7 @@ function heliofusionExoticizerController:new(
         local output = value.cpu.finalOutput()
 
         if output == nil then
-          error("Found CPU without crafting monitor")
+          return false
         end
 
         if output.label == self.fakeRecipeName then
