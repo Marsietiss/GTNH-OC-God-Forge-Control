@@ -188,8 +188,8 @@ function heliofusionExoticizerController:new(
   function obj:init()
     self.fakeRecipeName = "Fake recipe "..self.database.address:sub(0, 8)
 
-    self.outputMeInterfaceProxy = componentDiscoverLib.discoverProxy(outputMeInterfaceAddress, "Output Me Interface", "me_interface")
-    self.inputMeInterfaceProxy = componentDiscoverLib.discoverProxy(inputMeInterfaceAddress, "Input Me Interface", "me_interface")
+    self.outputMeInterfaceProxy = componentDiscoverLib.discoverProxy(outputMeInterfaceAddress, "Output Me Interface", "fluid_interface")
+    self.inputMeInterfaceProxy = componentDiscoverLib.discoverProxy(inputMeInterfaceAddress, "Input Me Interface", "fluid_interface")
     self.transposerProxy = componentDiscoverLib.discoverProxy(transposerAddress, "Transposer", "transposer")
     self.redstoneIoProxy = componentDiscoverLib.discoverProxy(redstoneIoAddress, "Redstone io", "redstone")
 
